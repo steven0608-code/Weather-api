@@ -1,0 +1,103 @@
+/* Full Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #007bff, #ffcc80); /* Blue on Top, Light Orange on Bottom */
+    height: 100vh;
+    display: flex;
+    align-items: flex-start; /* Move Up */
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding-top: 10vh; /* Adjust position UP */
+}
+
+/* Main Container (Side-by-Side Layout) */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Increased gap */
+    align-items: flex-start;
+    width: 800px; /* Increased width */
+}
+
+/* Weather Today Section (Left) */
+.weather-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    width: 320px; /* Increased width */
+    border-top: 5px solid #007bff; /* Blue Accent */
+}
+
+/* Forecast Section (Right) */
+.forecast-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    width: 380px; /* Increased width */
+    border-bottom: 5px solid #ff9800; /* Light Orange Accent */
+}
+
+/* Forecast Grid */
+#forecastContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: repeat(2, auto); /* Two rows */
+    gap: 15px; /* Adjusted gap */
+    margin-top: 10px;
+}
+
+/* Forecast Cards */
+.forecast-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px; /* Reduced padding */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 12px; /* Reduced font size */
+    border-bottom: 3px solid #ff9800; /* Light Orange Accent */
+    margin: 8px; /* Increased margin */
+}
+
+/* Weather Icons */
+.weather-icon {
+    width: 45px; /* Adjusted size */
+    height: 45px; /* Adjusted size */
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Increased gap */
+}
+
+input {
+    padding: 8px; /* Increased padding */
+    font-size: 14px; /* Increased font size */
+    border: 2px solid #007bff; /* Blue Input Border */
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px; /* Increased padding */
+    font-size: 14px; /* Increased font size */
+    cursor: pointer;
+    background-color: #ff9800; /* Orange Button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e68900; /* Darker Orange on Hover */
+}
+
+/* Loading Animation */
+.loading {
+    display: none;
+    color: red;
+    font-size: 14px; /* Increased font size */
+}
